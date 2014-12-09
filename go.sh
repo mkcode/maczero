@@ -1,6 +1,6 @@
 export SETUP_PATH=/opt/maczero
 
-mkdir -p /opt/
+sudo mkdir -p /opt/
 sudo chown $USER /opt/
 git clone . $SETUP_PATH
 sudo gem update --system
