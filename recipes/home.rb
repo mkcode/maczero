@@ -1,2 +1,2 @@
-include_recipe 'provision::zsh'
-include_recipe 'provision::dotfiles'
+include_recipe 'maczero::zsh'
+include_recipe 'maczero::dotfiles'

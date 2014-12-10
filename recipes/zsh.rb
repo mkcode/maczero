@@ -1,4 +1,4 @@
-include_recipe 'provision::directories'
+include_recipe 'maczero::directories'
 
 zsh_packages = %w{
   fortune
@@ -11,7 +11,7 @@ zsh_packages.each do |pkg|
   end
 end
 
-homebrewalt_tap 'thoughtbot/formulae'
+homebrew_tap 'thoughtbot/formulae'
 package 'rcm'
 
 git "prezto (zsh)" do

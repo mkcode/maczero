@@ -1,4 +1,4 @@
-include_recipe 'provision::directories'
+include_recipe 'maczero::directories'
 
 git "dotfiles" do
   repository "https://github.com/mkcode/dotfiles"
@@ -8,7 +8,7 @@ git "dotfiles" do
   user node['current_user']
 end
 
-homebrewalt_tap 'thoughtbot/formulae'
+homebrew_tap 'thoughtbot/formulae'
 package 'rcm'
 
 execute "setting up dotfiles" do
