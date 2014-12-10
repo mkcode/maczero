@@ -38,5 +38,5 @@ end
 
 user node['current_user'] do
   action :modify
-  shell lazy{ `brew --prefix zsh` }
+  shell lazy{ File.join(`brew --prefix zsh`.chomp, 'bin') }
 end
