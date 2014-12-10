@@ -36,7 +36,15 @@ execute "setting up home" do
   not_if { File.exists? "~/.zprezto" }
 end
 
+execute "adding brew managed zsh to available shells"
+  command 'echo "$(brew --prefix)/bin/zsh" >> /etc/shells'
+  not_if {
+    zsh_bin = File.join(`brew --prefix`.chomp, 'bin', 'zsh')
+    File.readlines('/etc/shells').detect{ |line| line.chomp == zsh_bin }
+  }
+end
+
 user node['current_user'] do
   action :modify
-  shell lazy{ File.join(`brew --prefix zsh`.chomp, 'bin') }
+  shell lazy{ File.join(`brew --prefix`.chomp, 'bin', 'zsh') }
 end
