@@ -17,8 +17,8 @@ nvm_packages = %w{
 nvm_dir = "~/.nvm"
 nvm_cmd_pre = "export NVM_DIR=#{nvm_dir} && source $(brew --prefix nvm)/nvm.sh &&"
 
-nvm_packages.each do |pkg|
-  package pkg do
+nvm_packages.each do |nvm_pkg|
+  package nvm_pkg do
     action :install
   end
 end
