@@ -36,7 +36,7 @@ execute "setting up home" do
   not_if { File.exists? "~/.zprezto" }
 end
 
-execute "adding brew managed zsh to available shells"
+execute "adding brew managed zsh to available shells" do
   command 'echo "$(brew --prefix)/bin/zsh" >> /etc/shells'
   not_if {
     zsh_bin = File.join(`brew --prefix`.chomp, 'bin', 'zsh')
