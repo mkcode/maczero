@@ -1,6 +1,7 @@
 include_recipe 'maczero::directories'
 
 zsh_packages = %w{
+  zsh
   fortune
   fasd
 }
@@ -37,5 +38,5 @@ end
 
 user node['current_user'] do
   action :modify
-  shell '/bin/zsh'
+  shell lazy{ `brew --prefix zsh` }
 end
