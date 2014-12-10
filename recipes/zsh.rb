@@ -17,7 +17,7 @@ package 'rcm'
 
 git "prezto (zsh)" do
   repository "https://github.com/mkcode/prezto"
-  destination File.expand_path("~/src/back-pocket/prezto")
+  destination File.join(node['projects_personal_dir'], "prezto")
   revision 'my-config'
   action :sync
   enable_submodules true
@@ -26,12 +26,12 @@ end
 
 link 'link prezto to home' do
   target_file File.expand_path('~/.zprezto')
-  to File.expand_path('~/src/back-pocket/prezto')
+  to File.join(node['projects_personal_dir'], "prezto")
   user node['current_user']
 end
 
 execute "setting up home" do
-  command "rcup -d ~/src/back-pocket/prezto/runcoms"
+  command "rcup -d #{File.join(node['projects_personal_dir'], 'prezto', 'runcoms' )}"
   user node['current_user']
   not_if { File.exists? "~/.zprezto" }
 end
