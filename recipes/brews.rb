@@ -52,4 +52,14 @@ homebrew_cask "google-chrome-canary"
 homebrew_cask "grandperspective"
 homebrew_cask "flux"
 homebrew_cask "fseventer"
+homebrew_cask "vmware-fusion"
+homebrew_cask "launchbar"
+homebrew_cask "licecap"
+homebrew_cask "mjolnir"
+homebrew_cask "notational-velocity"
+homebrew_cask "screen-hero"
+
+
+
+
 # homebrew_cask ""
