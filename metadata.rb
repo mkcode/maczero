@@ -6,5 +6,5 @@ description      'Installs/Configures maczero'
 long_description 'Installs/Configures maczero'
 version          '0.1.0'
 
-depends          'homebrew', '~> 1.9.2'
+depends          'homebrew', '~> 1.10.0'
 depends          'dmg'
