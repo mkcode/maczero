@@ -32,14 +32,14 @@ homebrew_cask 'font-source-code-pro'
 homebrew_cask 'font-fantasque-sans-mono'
 
 # quicklook
-package 'suspicious-package' # quicklook info for .pkg installers
-package 'quicklook-json'
-package 'qlstephen'
-package 'qlmarkdown'
-package 'qlcolorcode'
-package 'qlimagesize'
-package 'qlvideo'
-package 'epubquicklook'
+homebrew_cask 'suspicious-package' # quicklook info for .pkg installers
+homebrew_cask 'quicklook-json'
+homebrew_cask 'qlstephen'
+homebrew_cask 'qlmarkdown'
+homebrew_cask 'qlcolorcode'
+homebrew_cask 'qlimagesize'
+homebrew_cask 'qlvideo'
+homebrew_cask 'epubquicklook'
 
 # emacs
 package 'xz'
