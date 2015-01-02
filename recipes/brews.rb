@@ -10,6 +10,18 @@
 include_recipe 'homebrew::default'
 include_recipe 'homebrew::cask'
 
+directory '/opt/homebrew-cask/Caskroom' do
+  action :create
+  recursive true
+  mode '0755'
+  owner node['current_user']
+  group 'staff'
+end
+
+directory '/opt/homebrew-cask' do
+  owner node['current_user']
+end
+
 # taps
 homebrew_tap 'caskroom/versions'
 homebrew_tap 'caskroom/fonts'
