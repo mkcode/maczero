@@ -71,4 +71,9 @@ package 'elasticsearch'
 
 # apps
 homebrew_cask "google-chrome"
+homebrew_cask "google-chrome-canary"
+homebrew_cask "firefox"
+homebrew_cask "grandperspective"
+homebrew_cask "flux"
+homebrew_cask "fseventer"
 # homebrew_cask ""
