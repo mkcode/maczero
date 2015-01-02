@@ -16,8 +16,8 @@ homebrew_tap 'caskroom/fonts'
 homebrew_tap 'homebrew/dupes'
 
 # fonts
-package 'font-source-code-pro'
-package 'font-fantasque-sans-mono'
+homebrew_cask 'font-source-code-pro'
+homebrew_cask 'font-fantasque-sans-mono'
 
 # quicklook
 package 'suspicious-package' # quicklook info for .pkg installers
