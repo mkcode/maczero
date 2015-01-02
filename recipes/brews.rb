@@ -43,7 +43,7 @@ homebrew_cask 'epubquicklook'
 
 # emacs
 package 'xz'
-package 'gnutils'
+package 'gnutls'
 package 'imagemagick'
 package 'mailutils'
 package 'glib'
