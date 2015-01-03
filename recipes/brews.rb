@@ -59,6 +59,7 @@ homebrew_cask "licecap"
 homebrew_cask "mjolnir"
 homebrew_cask "notational-velocity"
 homebrew_cask "screenhero"
+homebrew_cask "istat-menus"
 
 
 
