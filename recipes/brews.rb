@@ -46,6 +46,7 @@ homebrew_cask 'java'
 package 'elasticsearch'
 
 # apps
+homebrew_cask "iterm2"
 homebrew_cask "google-chrome"
 homebrew_cask "google-chrome-canary"
 # homebrew_cask "firefox"
